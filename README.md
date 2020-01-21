@@ -18,5 +18,5 @@ The L293D contains two H-Bridges. In this project we will be using one H-Bridge 
 http://www.ti.com/lit/ds/symlink/l293d.pdf
 #### L293D Pin-Diagram
 ![L293D pin diagram](https://components101.com/sites/default/files/component_pin/L293D-Pinout.png) 
-### L293D                 
+### L293D Block-Diagram          
 ![L293D internal](http://www.ti.com/ds_dgm/images/fbd_slrs008d.gif)
