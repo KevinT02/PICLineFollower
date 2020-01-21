@@ -11,4 +11,4 @@ Outputs 1 when sees a black and outputs a 0 when it sees a white
 The LM293 contains a double comparator inside. The datasheet and information on buying the chip can be found in the following link
 http://www.ti.com/product/LM293
 ### L293D 
-!(L293D pin outs)[https://components101.com/sites/default/files/component_pin/L293D-Pinout.png]
+![L293D pin outs](https://components101.com/sites/default/files/component_pin/L293D-Pinout.png)
