@@ -16,4 +16,4 @@ http://www.ti.com/product/LM293
 ### L293D Motor Driver IC
 The L293D contains two H-Bridges. In this project we will be using one H-Bridge for each of the motors we will be using to maneuver the line follower. The datasheet and information on buying the chip can be found in the following link. You can also find the pinout diagram below .
 http://www.ti.com/lit/ds/symlink/l293d.pdf
-![L293D pin outs](https://components101.com/sites/default/files/component_pin/L293D-Pinout.png) | ![L293D internal](http://www.ti.com/ds_dgm/images/fbd_slrs008d.gif)
+![L293D pin outs](https://components101.com/sites/default/files/component_pin/L293D-Pinout.png) : ![L293D internal](http://www.ti.com/ds_dgm/images/fbd_slrs008d.gif)
