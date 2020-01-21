@@ -2,7 +2,7 @@
 In this project we will be using a PIC16f684 to execute the line follower code written in assembly to maneuver through a path using a blackline on a white surface. Information on the hardware used in this project will be listed below.
 
 ## Getting Started
-The information below will help you understand how the circuit and code works so you will be able to make adjustments to your own line follower. In the example folder will be some references/examples which you can take a look at in the event you are in need of help although they are most likely useless. The file named "asmLine.asm" is the code that makes the line follower follow the line and the "asmTurn.asm" is the code for "asmLine.asm" however, also includes a turn for when the sensors of the robot detects blacks on both left and right QTIs.
+The information below will help you understand how the circuit and code works so you will be able to make adjustments to your own line follower. In the example folder will be some references/examples which you can take a look at in the event you are in need of help although you most likely will not need them. The file named "asmLine.asm" is the code that makes the line follower follow the line and the "asmTurn.asm" is the code for "asmLine.asm" however, also includes a turn for when the sensors of the robot detects blacks on both left and right QTIs.
 
 ## Hardware Notes
 ### QTI Sensor
