@@ -1,5 +1,5 @@
-# Pic-LineFollower
-Uses the pic16f684 to execute the line follower code written in assembly.
+# PIC-LineFollower
+In this project we will be using a PIC16f684 to execute the line follower code written in assembly to maneuver through a path using a blackline on a white surface. Information on the hardware used in this project will be listed below.
 
 ## Getting Started
 The information below will help you understand how the circuit and code works so you will be able to make adjustments to suit your project. 
