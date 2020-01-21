@@ -8,7 +8,7 @@ The information below will help you understand how the circuit and code works so
 ### QTI Sensor
 The QTI sensors will output 1(5V) when sees a black and output a 0(0V) when it sees a white. This will allow the line follower to detect the black line on a white surface. 
 
-![Qti pinout](http://1.bp.blogspot.com/-N0Nd3CAbPmw/UmeMtR847mI/AAAAAAAATgQ/mUeR5FXTRqg/s1600/QTI-3.png) | ![Qti Sensor](http://forums.parallax.com/uploads/attachments/40445/59658.jpg)
+![Qti pinout](http://1.bp.blogspot.com/-N0Nd3CAbPmw/UmeMtR847mI/AAAAAAAATgQ/mUeR5FXTRqg/s1600/QTI-3.png)  ![Qti Sensor](http://forums.parallax.com/uploads/attachments/40445/59658.jpg)
 ### LM293 Comparator 
 The LM293 contains a double comparator inside. One comparator will be used for the right sensor and the other comparator will be used for the left sensor. You may use two seperate comparactors however, the robot will be less compact. The datasheet and information on buying the chip can be found in the following link. You can also find the pinout diagram below 
 http://www.ti.com/product/LM293
