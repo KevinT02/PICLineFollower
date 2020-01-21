@@ -9,6 +9,7 @@ title "asmLine.asm - Assembly Language Line Follower Program"
 ;		-2 DC motors of 143:1 used, through a LM293D IC Driver
 ;   	-left motor is controlled by RC0 and RC1
 ;   	-right motor is controlled by RC2 and RC3
+;	
 ;	Sensors:
 ;		-both sensors are wired through a L293 dual comparator
 ;       -LEDs are tied to output of comparators:
@@ -37,9 +38,7 @@ title "asmLine.asm - Assembly Language Line Follower Program"
 
 ;  Variables
 	CBLOCK 0x20
-	cycle1
-	cycle2
-	cycle3
+	
 	ENDC
 ; ----------------------------------------------------------------------------------------------------------------------
  PAGE
@@ -73,11 +72,9 @@ loop:
 		Dlay 30000		;more accurate reading from sensors
 		
 	btfss PORTA, 5		;if left sensor hits black line, 
-		call check_right
 		call turn_left	;turn left
 
 	btfss PORTA, 4		;if right sensor hits black line,
-		call check_left
 		call turn_right	;turn right
 	
 	
@@ -104,13 +101,3 @@ turn_right:	;turn robot right
 		Dlay 30000
 	return		;return back to main program loop  
 
-check_left:
-	btfss PORTA, 5
-		return
-	clear PORTA
-	
-
-check_right:
-	btfss PORTA, 4
-		return
-	clear PORTA
