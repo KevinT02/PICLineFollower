@@ -10,10 +10,13 @@ The QTI sensors will output 1(5V) when sees a black and output a 0(0V) when it s
 
 ![Qti pinout](http://1.bp.blogspot.com/-N0Nd3CAbPmw/UmeMtR847mI/AAAAAAAATgQ/mUeR5FXTRqg/s1600/QTI-3.png)  ![Qti Sensor](http://forums.parallax.com/uploads/attachments/40445/59658.jpg)
 ### LM293 Comparator 
-The LM293 contains a double comparator inside. One comparator will be used for the right sensor and the other comparator will be used for the left sensor. You may use two seperate comparactors however, the robot will be less compact. The datasheet and information on buying the chip can be found in the following link. You can also find the pinout diagram below .
+The LM293 contains a double comparator inside. One comparator will be used for the right sensor and the other comparator will be used for the left sensor. You may use two seperate comparactors however, the robot will be less compact. The datasheet and information on buying the chip can be found in the following link. You can also find the pin diagram below .
 http://www.ti.com/product/LM293
 ![LM293 Comparator](https://www.theengineeringprojects.com/wp-content/uploads/2017/08/Introduction-to-LM293_9.png)
 ### L293D Motor Driver IC
-The L293D contains two H-Bridges. In this project we will be using one H-Bridge for each of the motors we will be using to maneuver the line follower. The datasheet and information on buying the chip can be found in the following link. You can also find the pinout diagram below .
+The L293D contains two H-Bridges. In this project we will be using one H-Bridge for each of the motors we will be using to maneuver the line follower. The datasheet and information on buying the chip can be found in the following link. You can also find the pin diagram below .
 http://www.ti.com/lit/ds/symlink/l293d.pdf
-![L293D pin outs](https://components101.com/sites/default/files/component_pin/L293D-Pinout.png) : ![L293D internal](http://www.ti.com/ds_dgm/images/fbd_slrs008d.gif)
+#### L293D Pin-Diagram
+![L293D pin diagram](https://components101.com/sites/default/files/component_pin/L293D-Pinout.png) 
+### L293D                 
+![L293D internal](http://www.ti.com/ds_dgm/images/fbd_slrs008d.gif)
