@@ -1,31 +1,3 @@
-;
-; A program which allows the robot to follow a black line 
-; using two reflective sensors which detect black or white surfaces
-;
-;  Hardware Notes:
-;   PIC16F684 running at 4 MHz
-;	Motors:
-;		-2 DC motors of 143:1 used, through a LM293D IC Driver
-;   	-left motor is controlled by RC0 and RC1
-;   	-right motor is controlled by RC2 and RC3
-;	Sensors:
-;		-both sensors are wired through a L293 dual comparator
-;       -LEDs are tied to output of comparators:
-;			-LED turns OFF when it senses the line
-;			-LED turns ON when it doesn't sense the line
-;		-Vref from a 10k pot is set about 2.5V 
-;		-left sensor is let to RA5 
-;		-right sensor is set to RA4
-;		-LEDs turn on when 
-; 
-;   Directions:
-;  	to go forward:		PORTC&lt;3:0&gt;=1010=10
-;	to go backwards:	PORTC&lt;3:0&gt;=0101=5
-;	to spin left:		PORTC&lt;3:0&gt;=1001=9
-;	to spin right:		PORTC&lt;3:0&gt;=0110=6
-
-; Kevin Tu
-; 2020-01-17
 ;------------------------------------------------------------------------------------------------------
 ; Setup
 	LIST R=DEC							
@@ -81,14 +53,14 @@ loop:
 ; -------------------------------------------------------------------------------------------------------------------------------
 ; subroutines
 	
-turn_left:		;turn robot left
+turn_left:				;turn robot left
 	movlw 9
 	movwf PORTC
 	nop
 	Dlay 60000
 		clrf PORTC
 		Dlay 30000
-	return		;return back to main program loop
+	return				;return back to main program loop
 
 turn_right:	;turn robot right	
 	movlw 6
@@ -97,6 +69,6 @@ turn_right:	;turn robot right
 	Dlay 60000
 		clrf PORTC
 		Dlay 30000
-	return		;return back to main program loop
+	return				;return back to main program loop
 
   end                           
