@@ -23,3 +23,6 @@ http://www.ti.com/lit/ds/symlink/l293d.pdf
 The LM7805 regulator will help maintain th econstant 5 volts which will power the PIC16F684, preventing it from burning out and reducing dramatic decrease in voltage as more and more power is used. 
 #### QTI Sensor
 The QTI sensors will output 1 (5V) when sees a black and output a 0 (0V) when it sees a white. This will allow the line follower to detect the black line on a white surface. 
+
+# Final Product
+![final pic](https://github.com/KevinT02/PICLineFollower/blob/master/20200120_202126.jpg)
