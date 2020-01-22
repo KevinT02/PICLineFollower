@@ -62,9 +62,10 @@ title "asmLine.asm - Assembly Language Line Follower Program"
 ; Code Body
 	 	
 loop:
+	
     movlw  10				;Move forward b'001010' 
 	movwf PORTC				;until hits black line, move accordingly
-	Dlay 100000
+	Dlay 50000
 	nop
 		
 		clrf PORTC			;stop momentarily to get a
@@ -83,8 +84,9 @@ loop:
 ; -------------------------------------------------------------------------------------------------------------------------------
 ; subroutines
 	
-turn_left:					;turn robot left
-	movlw 9                 ;b'001001'
+turn_left:
+	clrf PORTC					;turn robot left
+	movlw 9                 	;b'001001'
 	movwf PORTC
 	nop
 	Dlay 60000
@@ -92,7 +94,8 @@ turn_left:					;turn robot left
 		Dlay 30000
 	return					;return back to main program loop
 
-turn_right:					;turn robot right	
+turn_right:			
+	clrf PORTC				;turn robot right	
 	movlw 6					;b'000110'
 	movwf PORTC
 	nop
@@ -103,27 +106,25 @@ turn_right:					;turn robot right
 
 check_right:
 	btfss PORTA, 4
-		call stop_turn
+		call turn_around
 	call turn_left			;turn left
 	return
 
 check_left:
 	btfss PORTA, 5
-		call stop_turn
+		call turn_around
 	call turn_right			;turn right
 	return
 
 turn_around:
+	clrf PORTC
 	movlw 9
 	movwf PORTC
 	nop
-	Dlay 60000
+	Dlay 100000
 	btfss PORTA, 4 			;turn left until right sensor hit black
 		return
 
-stop_turn:
-	clrf PORTC
-	call turn_around
 
   end                           
              
